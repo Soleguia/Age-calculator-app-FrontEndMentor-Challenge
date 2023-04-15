@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <main class="main">
+    <div class="app">
+
+      <section class="inputs">
+        <div class="input-wrapper input-wrapper--day">
+          <label class="input__label" for="input--day">Day</label>
+          <input type="number" name="input--day" class="input input--day" id="input--day" placeholder="DD">
+        </div>
+        <div class="input-wrapper input-wrapper--month">
+          <label class="input__label" for="input--month">Month</label>
+          <input type="number" name="input--month" class="input input--month" id="input--month" placeholder="MM">
+        </div>
+        <div class="input-wrapper input-wrapper--year">
+          <label class="input__label" for="input--year">Year</label>
+          <input type="number" name="input--year" class="input input--year" id="input--year" placeholder="YYYY">
+        </div>
+      </section>
+      <section class="action">
+          <button class="action--calculate">
+            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44" class="action__icon">
+              <g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g>
+            </svg>
+          </button>
+      </section>
+      <section class="results">
+        <div class="result result--years">
+          <span class="result__amount">--</span>
+          <span class="result__label">years</span>
+        </div>
+        <div class="result result--months">
+          <span class="result__amount">--</span>
+          <span class="result__label">months</span>
+        </div>
+        <div class="result result--days">
+          <span class="result__amount">--</span>
+          <span class="result__label">days</span>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="footer">
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+
+  </main>
+</body>
+</html>
