@@ -51,7 +51,6 @@ body {
     display: flex;
     justify-content: space-between;
     gap: calc(10% / 2);
-    margin-bottom: 1rem;
 }
 .input-wrapper {
     max-width: 30%;
@@ -84,6 +83,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
     .action:before {
@@ -123,9 +123,19 @@ body {
         }
         .result__label {}
 
-
-
-
+@media screen and (min-width: 375px) {
+    .app {
+        width: 33ch;
+    }
+    .inputs,
+    .results {
+        max-width: 24ch;
+    }
+    .action {
+        justify-content: flex-end;
+        margin: 0;
+    }
+}
 
 
 
