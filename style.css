@@ -134,15 +134,15 @@ body {
 
     .result {
         font-size: 1.4rem;
+        line-height: 1.2;
         font-weight: 800;
         font-style: italic;
     }
         .result__amount {
             color: var(--purple);
         }
-        .result__label {}
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 376px) {
     .app {
         width: 33ch;
     }
