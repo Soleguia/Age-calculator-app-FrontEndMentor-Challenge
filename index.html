@@ -18,19 +18,22 @@
       <section class="inputs">
         <div class="input-wrapper input-wrapper--day">
           <label class="input__label" for="input--day">Day</label>
-          <input type="number" name="input--day" class="input input--day" id="input--day" placeholder="DD" min="1" max="31">
+          <input type="number" name="input--day" class="input input--day" id="input--day" placeholder="DD" min="1" max="31" maxlength="2">
+          <span class="input__error"></span>
         </div>
         <div class="input-wrapper input-wrapper--month">
           <label class="input__label" for="input--month">Month</label>
-          <input type="number" name="input--month" class="input input--month" id="input--month" placeholder="MM" min="1" max="12">
+          <input type="number" name="input--month" class="input input--month" id="input--month" placeholder="MM" min="1" max="12" maxlength="2">
+          <span class="input__error"></span>
         </div>
         <div class="input-wrapper input-wrapper--year">
           <label class="input__label" for="input--year">Year</label>
-          <input type="number" name="input--year" class="input input--year" id="input--year" placeholder="YYYY" min="1900">
+          <input type="number" name="input--year" class="input input--year" id="input--year" placeholder="YYYY" min="1900" maxlength="4">
+          <span class="input__error"></span>
         </div>
       </section>
       <section class="action">
-          <button class="action--calculate">
+          <button class="action--calculate" id="action--calculate">
             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44" class="action__icon">
               <g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g>
             </svg>
@@ -61,5 +64,6 @@
     </footer>
 
   </main>
+  <script src="./scripts.js"></script>
 </body>
 </html>

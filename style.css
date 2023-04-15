@@ -49,13 +49,16 @@ body {
 
 .inputs {
     display: flex;
-    justify-content: space-between;
     gap: calc(10% / 2);
 }
 .input-wrapper {
-    max-width: 30%;
+    flex: 1 1 auto;
     display: block;
+    max-width: 30%;
 }
+    .input-wrapper.error .input__label {
+        color: var(--light-red);
+    }
 
     .input__label {
         display: block;
@@ -70,12 +73,23 @@ body {
     .input {
         display: block;
         padding: .5rem .35rem;
+        width: 100%;
         max-width: 100%;
         font-size: .6rem;
         font-weight: 700;
         color: var(--off-black);
         border: 1px solid var(--light-grey);
         border-radius: .25rem;
+    }
+    .input__error {
+        display: none;
+        margin-top: .25rem;
+        font-size: .35rem;
+        font-style: italic;
+        color: var(--light-red);
+    }
+    .input-wrapper.error > .input__error {
+        display: block;
     }
 
 .action {
@@ -110,9 +124,14 @@ body {
         background-color: var(--purple);
         border: 0;
         border-radius: 50%;
+        cursor: pointer;
+        transition: all .25s ease-in-out;
+    }
+    .action--calculate:hover,
+    .action--calculate:active {
+        background-color: var(--off-black);
     }
 
-.results {}
     .result {
         font-size: 1.4rem;
         font-weight: 800;
